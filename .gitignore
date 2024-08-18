@@ -1,0 +1,3 @@
+# ignora cache do python e de jupyter notebook
+*__pycache__*
+*ipynb_checkpoints*
