@@ -1,0 +1,47 @@
+
+Quantidade de Observações = 50160
+
+Cobertura espacial =
+-------------
+Menor latitude = -17437
+SELECT MIN(latitude) FROM "doctorate"."lorena_data_cerrado_mod13q1" 
+-------------
+Maior Latitude = -2.45553241898891
+SELECT MAX(latitude) FROM "doctorate"."lorena_data_cerrado_mod13q1" 
+-------------
+Menor Longitude = -59306
+SELECT MIN(longitude) FROM "doctorate"."lorena_data_cerrado_mod13q1" 
+-------------
+Maior Longitude = -42.8283755102876
+SELECT MAX(longitude) FROM "doctorate"."lorena_data_cerrado_mod13q1" 
+-------------
+
+Cobertura temporal da base = 20000828_TO_20190901
+conforme SQLs abaixo
+
+SELECT MIN(start_date) FROM "doctorate"."lorena_data_cerrado_mod13q1" 
+2000-08-28
+
+SELECT MAX(end_date) FROM "doctorate"."lorena_data_cerrado_mod13q1" 
+2019-09-01
+
+Número de observações por classe = 
+Silviculture		423
+Soy_Cotton		4124
+Fallow_Cotton		630
+Soy_Fallow		2098
+Pasture			7206
+Soy_Corn		4971
+Rocky_Savanna		8005
+Dunes			550
+Dense_Woodland		9966
+Savanna_Parkland	2699
+Millet_Cotton		316
+Savanna			9172
+
+Conforme SQL:
+SELECT label, COUNT(label) FROM "doctorate"."lorena_data_cerrado_mod13q1" GROUP BY label
+
+VERSÃO CSV:
+QTD_OBS;MINLAT;MAXLAT;MINLONG;MAXLONG;COBERTURA_TEMPORAL;QTD_OBS_SILVICULTURE;QTD_OBS_SOY_COTTON;QTD_OBS_FALLOW_COTTON;QTD_OBS_SOY_FALLOW;QTD_OBS_PASTURE;QTD_OBS_SOY_CORN;QTD_OBS_ROCKY_SAVANNA;QTD_OBS_DUNES;QTD_OBS_DENSE_WOODLAND;QTD_OBS_SAVANNA_PARKLAND;QTD_OBS_MILLET_COTTON;QTD_OBS_SAVANNA
+50160;-17437;-2.45553241898891;-59306;-42.8283755102876;20000828_TO_20190901;423;4124;630;2098;7206;4971;8005;550;9966;2699;316;9172
