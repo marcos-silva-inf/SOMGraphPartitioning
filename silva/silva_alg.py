@@ -6,7 +6,7 @@ from numpy.typing import NDArray
 
 def translate_2d_to_1d(x: int, y: int, shape: tuple[int, int]) -> int:
     n, m = shape
-    return x * m  +  y
+    return x * m + y
 
 def translate_1d_to_2d(i: int, shape: tuple[int, int]) -> tuple[int, int]:
     n, m = shape
